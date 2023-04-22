@@ -1,0 +1,16 @@
+CREATE DATABASE EmployeeManagementDB;
+
+use EmployeeManagementDB;
+
+CREATE TABLE Employee(employee_id INT Primary Key, employee_name VARCHAR(100), DateOfBirth DATE);
+
+INSERT INTO Employee VALUES(1101,'Pratiksha Patil','1997-11-21'),
+(1102,'Pranay Singh','2000-11-28'),
+(1103,'John Joe','2002-05-12'),
+(1104,'Snehal Palve','1998-05-20'),
+(1105,'Vaibhavi Patil','1997-08-30'),
+(1106,'Ankita Mane','1997-08-25'),
+(1107,'Mahan Nayak','1998-05-03'),
+(1108,'Arjun Singh','2001-12-21'),
+(1109,'Parth Kapoor','1995-12-12'),
+(1110,'Kavya Chopra','2005-03-09');
