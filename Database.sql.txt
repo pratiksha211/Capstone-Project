@@ -2,7 +2,7 @@ CREATE DATABASE EmployeeManagementDB;
 
 use EmployeeManagementDB;
 
-CREATE TABLE Employee(employee_id INT Primary Key, employee_name VARCHAR(100), DateOfBirth DATE);
+CREATE TABLE Employee(employee_id INT Primary Key, employee_name VARCHAR(100), DateOfBirth DATE NOT NULL);
 
 INSERT INTO Employee VALUES(1101,'Pratiksha Patil','1997-11-21'),
 (1102,'Pranay Singh','2000-11-28'),
