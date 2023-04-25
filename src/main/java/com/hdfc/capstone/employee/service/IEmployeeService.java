@@ -1,9 +1,8 @@
 package com.hdfc.capstone.employee.service;
 
-import com.hdfc.capstone.employee.entity.Employee;
-import com.hdfc.capstone.employee.exception.InvalidEmployeeException;
+import com.hdfc.capstone.employee.vo.EmployeeVO;
 
 public interface IEmployeeService {
 
-	public Employee getByEmployeeId(int employeeID) throws InvalidEmployeeException;
+	public EmployeeVO getByEmployeeId(int employeeID) throws Exception;
 }

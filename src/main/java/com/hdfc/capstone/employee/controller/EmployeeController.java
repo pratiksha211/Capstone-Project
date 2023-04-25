@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hdfc.capstone.employee.entity.Employee;
 import com.hdfc.capstone.employee.exception.InvalidEmployeeException;
 import com.hdfc.capstone.employee.service.IEmployeeService;
+import com.hdfc.capstone.employee.vo.EmployeeVO;
 
 @RestController
 @RequestMapping("/employee")
@@ -22,7 +22,7 @@ public class EmployeeController {
 	IEmployeeService employeeService;
 	
 	@GetMapping("/get/byempId/{employeeID}")
-	public Employee getByEmployeeId(@PathVariable int employeeID)throws InvalidEmployeeException{
+	public EmployeeVO getByEmployeeId(@PathVariable int employeeID)throws Exception{
 		logger.info("Record of EmployeeID("+employeeID+")is called");
 		return employeeService.getByEmployeeId(employeeID);
 	}
